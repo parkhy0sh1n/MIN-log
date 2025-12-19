@@ -4,7 +4,9 @@ import * as styles from "lib/styles/styles";
 import media from "lib/styles/media";
 
 const Barcode = () => {
-  return <Content src="/images/barcode.png" alt="" />;
+  return (
+    <Content src={`${process.env.PUBLIC_URL}/images/barcode.png`} alt="" />
+  );
 };
 
 const Content = styled.img`

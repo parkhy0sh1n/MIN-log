@@ -1,0 +1,66 @@
+{
+  "name": ["Minseo Kim", "김민서", "金敏瑞", "MIN"],
+  "introduce": "반갑습니다.\n\n저는 크리에이터이자 개발자입니다. 주로 웹 개발을 담당하고 있으며, 항상 개발자와 사용자에게 <mark>최적의 경험을 전달</mark></a>해주려는 자세로 개발하고 있습니다.\n\n타라소프트에서 웹 서비스를 개발/배포/운영하고 있으며, 비즈니스 가치를 고객에게 온전히 전달하기 위해서 다양한 직무의 구성원들과 <mark>능동적으로 커뮤니케이션</mark>하며, 협업해왔습니다.\n\n일의 생산성을 높이는 것을 중요시하여 <mark>회사 혹은 팀의 프로세스를 개선</mark></a>하려는 시도를 적극적으로 합니다.",
+  "url": {
+    "github": "https://github.com/parkhy0sh1n",
+    "blog-velog": "",
+    "blog-naver": ""
+  },
+  "keyword": [
+    "회사와 팀의 성장에 도움이 되는 일을 최우선시하며, 이를 통해 개발자와 비즈니스 가치를 창출합니다.",
+    "능동적인 커뮤니케이션 및 협업으로 문제 해결과 비즈니스 성장에 적극적으로 뛰어들고 있습니다.",
+    "기본은 항상 중요하다고 생각하고 있습니다.",
+    "프론트엔드뿐만 아니라, 개발하는 모든 것을 즐깁니다."
+  ],
+  "education": [
+    {
+      "date": "2018.03 ~ 2023.02",
+      "content": "<ul><li>IT 융합 스마트 소프트웨어 학과 졸업</li></ul>",
+      "management": "두원공과대학교"
+    }
+  ],
+  "experience": [
+    {
+      "date": "2025.10 ~ 현재 재직중",
+      "place": "타라소프트",
+      "href": "https://www.tarasoft.kr/",
+      "content": "<mark>블록체인 관련 웹·모바일 기반 소프트웨어를 개발합니다.</mark>\n\n현재 Web 3.0 커뮤니티 메신저 앱 개발을 진행하고 있습니다.<ul><li>삼성플랫폼 프로젝트 설계 및 개발(Vue3)</li><li>타라월렛 프로젝트 설계 및 개발(Vue3)</li></ul>",
+      "role": "프론트엔드"
+    },
+    {
+      "date": "2024.04 ~ 2025.04",
+      "place": "그루마케팅",
+      "href": "https://gurumarketing.co.kr/",
+      "content": "<mark>광고주 전용 브랜드 웹사이트 제작을 진행했습니다.</mark>\n<ul><li>광고주 전용 브랜드 웹사이트 제작을 함께 진행합니다.</li><li>마케팅 데이터(광고 성과, 전환율 등)를 시각화하는 내부 대시보드 개발</li><li>광고주가 직접 데이터를 확인할 수 있는 클라이언트 전용 페이지 구축</li><li>기존 프로젝트 코드 관리 및 장애 대응</li></ul>",
+      "role": "프론트엔드"
+    },
+    {
+      "date": "2023.10 ~ 2024.03",
+      "place": "이트리즈시스템",
+      "href": "http://www.etrees.co.kr/default/",
+      "content": "<mark>기업/공공기관 대상 SI·솔루션을 개발했습니다.</mark>\n<ul><li>기존 PHP 기반의 서비스를 Vue3 기반으로 주도적으로 마이그레이션</li><li>AWS 및 Github-Actions을 이용한 배포 자동화</li></ul>",
+      "role": "백엔드 & 프론트엔드"
+    }
+  ],
+  "otherExperience": [
+    {
+      "date": "2023.01 ~ 2023.06",
+      "place": "구디아카데미",
+      "href": "https://gudi.kr/",
+      "content": "공공데이터 융합 자바/스프링 개발자 양성과정 61기 수료"
+    }
+  ],
+  "skills": {
+    "FrontEnd": ["HTML", "CSS", "JavaScript", "jQuery", "Vue.js", "Bootstrap"],
+    "BackEnd": ["Java", "Spring", "JSON", "Node.js"],
+    "DataBase": ["ORACLE", "MySQL", "MariaDB", "MongoDB"],
+    "Using Tool": [
+      "Eclipse IDE",
+      "VSCode",
+      "Postman",
+      "Blender",
+      "Docker",
+      "GitHub"
+    ]
+  }
+}

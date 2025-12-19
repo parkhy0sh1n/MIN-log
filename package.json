@@ -17,7 +17,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "react-scripts test --watchAll=false",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",

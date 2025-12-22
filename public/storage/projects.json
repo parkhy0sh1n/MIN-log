@@ -1,6 +1,126 @@
 {
   "projects": [
     {
+      "title": "T'Station",
+      "img": "/images/t-station.png",
+      "info": ["Coin Trading App Built with Vue3", "타라소프트"],
+      "position": ["Front-end", "Back-end"],
+      "date": ["JANUARY", "2026"],
+      "collaborator": ["MIN", "X", "HYUN"],
+      "url": "https://www.tstation.com/",
+      "color": "#2a3138",
+      "post": [
+        {
+          "type": "image",
+          "content": "/images/t-station/t-station-main.png",
+          "size": "1000×640"
+        },
+        {
+          "type": "text",
+          "content": "Nuxt3(Vue3)와 TypeScript를 기반으로 한 코인 지갑 및 거래 웹 애플리케이션 템플릿을 설계·구현하였습니다.사용자 영역에서는 로그인, 지갑 조회, 코인 전송·교환, 거래 내역 확인 기능을 제공하고, 관리자 영역에서는 회원 관리, 코인 지급, 공지·문의 관리 등 운영에 필요한 기능을 포함합니다. 페이지 로직과 비즈니스 로직을 분리한 구조로 유지보수성과 확장성을 고려하였으며, Pinia 기반 상태 관리와 공통 Base 컴포넌트 설계를 통해 일관된 사용자 경험을 구현했습니다. 실제 서비스 운영 환경을 가정한 구조로 개발하여, 금융 서비스 성격의 웹 애플리케이션 아키텍처와 운영 관점의 개발 경험을 쌓았습니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup1.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 메인 화면 UI를 모바일 환경에 맞춰 구현한 화면으로, 상단에는 검색 중심의 헤더 구조와 빠른 메뉴 접근을 배치하여 차량 번호·차종·사이즈 기반 타이어 탐색 흐름을 강화했습니다. 메인 배너와 브랜드 바로가기 영역은 Swiper 기반 컴포넌트로 구성하여 이벤트 및 주요 브랜드 노출을 유연하게 제어할 수 있도록 설계했으며, Top5 타이어 영역에서는 상품 카드 컴포넌트를 공통화해 가격 등급, 리뷰 점수, 태그 정보를 일관되게 표현했습니다. 리뷰 섹션은 실제 구매 데이터를 기반으로 한 요약 배지와 주행 거리 조건을 함께 노출하도록 구성했으며, Pinia 기반 productStore와 reviewStore를 분리해 상품 정보와 리뷰 상태를 독립적으로 관리했습니다. 데이터 로딩 시에는 useAsyncData와 fetchTopProducts, fetchTopReviews 서비스 함수를 활용해 SSR 환경에서도 초기 렌더링 속도를 확보했으며, TailwindCSS 유틸리티 클래스를 사용해 카드 간 간격, 반응형 레이아웃, 브랜드 컬러 강조를 효율적으로 제어했습니다. 하단 활용 가이드 영역은 기능 단위로 컴포넌트를 분리하여 추후 서비스 확장 시에도 재사용이 가능하도록 설계된 구조입니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup2.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 모바일 서비스의 메뉴 오버레이 화면과 로그인 화면입니다. 좌측 화면은 전체 메뉴 탐색 구조로, 타이어 쇼핑·경정비·제공 서비스 카테고리를 중심으로 브랜드별·차종별 쇼핑 플로우를 명확히 분리했으며, Nuxt3 환경에서 MenuDrawer 컴포넌트와 Pinia의 menuStore를 활용해 열림 상태와 선택 메뉴를 관리하는 구조로 설명할 수 있습니다. 우측 로그인 화면은 BaseInput과 BaseButton 컴포넌트를 사용해 아이디·비밀번호 입력과 로그인 액션을 통일된 UI로 제공하고, Pinia의 authStore에서 로그인 상태와 토큰을 관리하며 login(), socialLogin() 서비스 함수를 통해 일반 로그인과 간편 로그인을 분기 처리하는 흐름으로 구현되었습니다. 각 화면은 잘림 없이 contain 방식으로 스케일링하고 남는 여백은 동일 화면을 블러 처리한 배경으로 채워 시각적 이질감을 최소화했으며, TailwindCSS 유틸을 활용해 여백, 버튼 크기, 정렬 규칙을 일관되게 유지한 구조입니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup3.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 회원가입 플로우를 구현한 UI로, 최초 진입 시 간편 회원가입 선택 화면에서 이메일 가입과 카카오·네이버·Apple 소셜 가입을 분기 처리하도록 구성했습니다. 소셜 로그인 버튼은 공통 SocialAuthButton 컴포넌트로 분리하고 provider 타입을 props로 전달해 authService.socialLogin(provider) 함수로 인증 플로우를 제어했으며, 이메일 가입 선택 시 회원가입 폼 페이지로 라우팅되도록 설계했습니다. 회원가입 입력 화면에서는 BaseInput과 BaseCheckBox 컴포넌트를 사용해 아이디, 비밀번호, 휴대폰 번호, 약관 동의 UI를 통일했고, 입력값과 체크 상태는 Pinia의 authStore에서 formState와 agreementState로 관리했습니다. 아이디 중복확인은 checkDuplicateEmail API를 통해 비동기 검증을 수행하고, 비밀번호는 validatePassword, matchPassword 유틸 함수로 규칙 검증과 일치 여부를 실시간으로 체크하도록 구현했습니다. 약관 전체 선택은 개별 약관 상태를 computed로 묶어 처리했으며, 필수 약관 충족 시에만 submitSignup() 함수가 호출되어 회원가입 요청이 가능하도록 제어하는 구조입니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup4.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup5.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 상품 검색 플로우를 구현한 UI로, 검색 진입 화면에서 차량번호·차종·사이즈 중 하나를 선택해 탐색 경로를 분기하도록 설계했습니다. 상단 검색 입력은 BaseSearchInput 컴포넌트로 구성하고 입력값과 검색 타입은 Pinia의 searchStore에서 keyword, searchType 상태로 관리하며, 입력 변경 시 debounceSearch 유틸을 통해 불필요한 API 호출을 방지했습니다. 차종 검색 결과 리스트는 VehicleModelList 컴포넌트에서 렌더링하고 fetchVehicleModels API 호출 결과를 연식 기준으로 정렬해 사용자 선택 시 modelCode를 기준으로 다음 단계로 라우팅되도록 처리했습니다. 사이즈 검색 화면에서는 단면폭·편평비·인치 단계를 순차 선택하는 구조로 구현했으며, 선택 값은 sizeState로 누적 관리하고 computed 기반 isSelectable 로직으로 다음 단계 활성화를 제어했습니다. 모든 검색 조건이 충족되면 buildSearchQuery 유틸로 파라미터를 조합해 상품 리스트 페이지로 이동하도록 구성된 흐름입니다."
+        },
+        {
+          "type": "text",
+          "content": "브랜드 선택 → 차종 선택 → 세부 모델 선택의 단계적 탐색 구조로 설계했습니다. 초기 브랜드 선택 화면에서는 브랜드 목록을 BrandGrid 컴포넌트로 구성하고, 선택 시 Pinia의 searchStore에 brandCode를 저장한 뒤 차종 리스트 화면으로 라우팅되도록 처리했습니다. 차종 리스트는 fetchVehicleByBrand API 호출 결과를 기반으로 VehicleList 컴포넌트에서 렌더링하며, 검색어 입력 시 keyword 상태를 반영해 computed 필터링으로 즉시 결과를 갱신하도록 구현했습니다. 특정 차종 선택 후에는 연식·세대 정보를 포함한 모델 리스트를 노출하고, 선택된 modelCode와 generation 정보를 searchStore에 누적 저장해 다음 단계 검색 조건으로 활용합니다. 모든 선택 값은 buildSearchQuery 유틸을 통해 공통 파라미터 형태로 정리되며, 최종적으로 상품 리스트 페이지에서 해당 조건을 기반으로 타이어 결과를 조회하는 흐름으로 구성되어 있습니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup6.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 차량 정보 확정 이후 상품 탐색 단계까지 이어지는 흐름을 Nuxt3(Vue3) 기반으로 구현한 결과 화면으로, 차량·연식·세부모델 선택에 따라 기본 타이어 사이즈를 자동 세팅하도록 설계했습니다. 차량 정보 영역은 vehicleStore에서 관리하며 연식과 세부모델 변경 시 resolveDefaultTireSize 유틸을 호출해 공장 출고 기준 사이즈를 계산하고, 해당 값은 Pinia 상태에 반영됩니다. 상품 영역에서는 tire, care(엔진오일·배터리) 카테고리를 공통 ProductList 컴포넌트로 구성하고, 선택된 탭과 필터 조건은 queryState로 관리해 재검색 시에도 유지되도록 처리했습니다. 가격대·추천순·카테고리 필터는 computed 기반으로 즉시 반응하도록 구성했으며, 상품 데이터는 fetchProducts API에서 차량 파라미터와 함께 조회해 서버 필터링과 클라이언트 정렬을 병행하는 구조로 구현했습니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup7.png",
+          "size": "3000x3000"
+        },
+        {
+          "type": "text",
+          "content": "상품 상세 진입 시 useRoute의 params로 sku를 받아 productService.getProductDetail로 데이터를 조회하고, Pinia의 useProductStore에 상세/리뷰/비교 데이터를 분리 저장해 탭 전환 시 재요청을 최소화하도록 구성했다고 가정했습니다. 가격 영역은 formatPrice 유틸과 할인율 계산 함수(calcDiscountRate)를 통해 쿠폰가/혜택가를 동기화하며, 비교 모달은 useModalStore로 열림 상태와 선택된 비교 타입(금액/성능)을 관리해 동일 컴포넌트를 재사용하도록 설계했습니다. UI는 TailwindCSS로 카드, 배지, CTA 버튼을 일관된 토큰으로 구성하고, 리스트 영역은 가로 스크롤 캐러셀을 snap-x 기반으로 구현해 터치 스크롤 경험을 자연스럽게 만든 흐름입니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup8.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 타이어 상품 구매 플로우(수량 선택 바텀시트, 구매 확인 모달, 사이즈 확인 안내, 장착 매장 선택)를 하나의 흐름으로 구성한 UI, 페이지 전환 구조에서 구매하기 버튼 클릭 시 openPurchaseSheet 함수로 바텀시트를 노출하고 선택 수량은 Pinia의 orderStore에서 reactive state로 관리되도록 설계했습니다. 수량 변경에 따라 calcTotalPrice 유틸을 통해 총 상품금액과 할인금액을 즉시 재계산하며, 확인 버튼 클릭 시 confirmPurchaseModal을 호출해 공통 Modal 컴포넌트로 구매 의사를 재확인하는 흐름입니다. 이후 타이어 사이즈 검증 단계에서는 route middleware에서 선택된 사이즈를 검증하고 불일치 시 SizeGuide 페이지로 이동하도록 처리했으며, 매장 선택 화면에서는 useStoreSearch composable을 통해 지역/매장명 조건을 관리하고 결과 리스트를 지도 보기와 리스트 보기로 전환할 수 있도록 구현했다고 가정했습니다. 전체 UI는 TailwindCSS 기반 카드·버튼 컴포넌트를 재사용해 일관성을 유지하고, 모든 상태는 Pinia 스토어 중심으로 단방향 데이터 흐름을 갖도록 구성했습니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup9.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 타이어 구매 과정에서 ‘장착일/시간 선택 → 차량 정보 입력 → 주문/결제 요약’으로 이어지는 핵심 플로우를 3개의 모바일 화면으로 구성한 목업입니다. 각 화면을 페이지 단위로 분리하고, Pinia의 orderStore에서 선택 매장/장착일시/차량정보(브랜드·차종·연료·연식·타이어사이즈 등)를 단일 상태로 관리하여 단계 이동 시에도 입력값이 유지되도록 설계했습니다. 날짜/시간 선택 영역은 formatDateTime 유틸로 ‘YYYY.MM.DD(요일) / HH:mm’ 형태로 표준화해 표시하고, 선택 가능한 슬롯은 getAvailableSlots 함수에서 API 응답을 정규화한 뒤 disabled 조건을 계산해 버튼 상태로 반영했습니다. 입력 폼은 Tailwind로 동일한 간격/라운드/포커스 스타일을 유지했으며, validateVehicleForm 유틸로 필수값과 포맷을 검증한 뒤 통과 시에만 다음 단계로 진행하도록 가드했습니다. 최종 요약 화면에서는 computeOrderSummary(가격/수량/할인)를 통해 금액 정보를 계산하고, submitOrder 서비스 함수로 결제 직전 payload를 생성해 전송하도록 구성하여 화면은 얇게 유지하고 로직은 store·service·utils로 분리한 구조로 구현했습니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup10.png",
+          "size": "2000x2000"
+        },
+        {
+          "type": "text",
+          "content": "본 화면은 주문/결제 마지막 단계에서 결제 정보 확인 화면과 EasyPay 결제수단 선택 화면을 하나의 흐름으로 구성한 UI로, 주문 요약 데이터는 Pinia의 orderStore 상태를 기준으로 렌더링되며 총 상품금액, 할인금액, 최종 결제금액은 calcPaymentSummary 유틸 함수를 통해 계산된 값을 사용합니다. 약관 동의 체크 여부는 reactive formState로 관리하여 필수 동의 미체크 시 결제 버튼이 비활성화되도록 처리했으며, 결제하기 버튼 클릭 시 openEasyPay() 액션을 통해 외부 결제 모듈을 오버레이 형태로 호출하는 구조입니다. EasyPay 화면에서는 selectedMethod 상태로 신용카드, 간편결제, 계좌이체, 가상계좌 중 하나만 선택되도록 제어하고, 다음 버튼 클릭 시 buildPaymentPayload 유틸로 결제 요청 데이터를 생성해 결제 API로 전달하도록 설계했습니다. 전체 화면은 TailwindCSS 기반 섹션 카드와 하단 고정 CTA 패턴을 공통 컴포넌트로 사용해 결제 단계에서도 일관된 사용자 경험을 유지하도록 구현했습니다."
+        },
+        {
+          "type": "image",
+          "content": "/images/t-station/tstation_mockup11.png",
+          "size": "2220x1080"
+        },
+        {
+          "type": "text",
+          "content": "앱의 all my T 진입 오버레이 UI를 구현한 화면으로, 단일 페이지 구조에서 글로벌 딤 처리와 플로팅 메뉴를 결합한 인터랙션을 중심으로 설계했습니다. 홈 화면 진입 시 Pinia의 commonStore에서 isAllMyTOpen 상태를 제어하여 배경을 어둡게 처리하고, 중앙 CTA 영역은 Teleport를 활용해 최상단 레이어로 렌더링되도록 구성했습니다. 원형 퀵 메뉴는 v-for 기반 아이콘 리스트로 구성하고, 각 메뉴 클릭 시 routeMap 유틸을 통해 목적 페이지로 이동하도록 처리했으며, 알림 뱃지와 최근 본 상품 카운트는 userActivityStore 상태를 참조해 동적으로 표시됩니다. 전체 UI는 TailwindCSS의 fixed, inset, z-index 유틸을 활용해 모바일 환경에서도 안정적인 레이어 구조를 유지하도록 구현했습니다."
+        }
+      ]
+    },
+    {
       "title": "TARA WALLET",
       "img": "/images/tara-wallet.png",
       "info": ["Coin Trading App Built with Vue3", "타라소프트"],

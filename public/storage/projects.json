@@ -3,7 +3,7 @@
     {
       "title": "T'Station",
       "img": "/images/t-station.png",
-      "info": ["Coin Trading App Built with Vue3", "타라소프트"],
+      "info": ["T'Station Mobile UI Development", "타라소프트"],
       "position": ["Front-end", "Back-end"],
       "date": ["JANUARY", "2026"],
       "collaborator": ["MIN", "X", "HYUN"],
